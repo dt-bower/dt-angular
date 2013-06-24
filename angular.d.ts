@@ -347,7 +347,7 @@ declare module ng {
         port(): number;
         protocol(): string;
         replace(): ILocationService;
-        search(): string;
+        search(): any;
         search(parametersMap: any): ILocationService;
         search(parameter: string, parameterValue: any): ILocationService;
         url(): string;
@@ -511,8 +511,8 @@ declare module ng {
     // Some opetions might not be available depending on the request. 
     // see http://docs.angularjs.org/api/ng.$http#Usage for options explanations
     interface IRequestConfig {
-        method: string;
-        url: string;
+        method?: string;
+        url?: string;
         params?: any;
 
         // XXX it has it's own structure...  perhaps we should define it in the future
@@ -522,7 +522,7 @@ declare module ng {
         timeout?: number;
         withCredentials?: bool;
 
-        // These accept multiple types, so let's defile them as any
+        // These accept multiple types, so let's define them as any
         data?: any;
         transformRequest?: any;
         transformResponse?: any;
