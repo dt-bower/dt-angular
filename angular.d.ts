@@ -201,6 +201,7 @@ declare module ng {
         $watch(watchExpression: (scope: IScope) => any, listener?: (newValue: any, oldValue: any, scope: IScope) => any, objectEquality?: bool): Function;
 
         $id: number;
+        $$phase: bool;
     }
 
     interface IAngularEvent {
