@@ -3,7 +3,7 @@
 // Definitions by: RomanoLindano
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/// <reference path="../jquery/jquery.d.ts" />
+/// <reference path="angular.d.ts" />
 
 declare module ng {
     export interface IAngularStatic {
